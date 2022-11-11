@@ -270,7 +270,7 @@ class _GameBoyState extends State<GameBoy> {
                     style: TextStyle(
                       color: AppColors.background2.withOpacity(0.5),
                       fontFamily: 'Nintendo04',
-                      fontSize: Dimensions.font08,
+                      fontSize: Dimensions.font09,
                     ),
                   )),
 
@@ -326,7 +326,7 @@ class _GameBoyState extends State<GameBoy> {
               // text GameBoy
               Positioned(
                   top: 357,
-                  left: 124,
+                  left: 114,
                   child: Text(
                     'GAME BOY',
                     style: TextStyle(

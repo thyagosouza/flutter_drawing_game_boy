@@ -49,7 +49,7 @@ class SoundOutput extends StatelessWidget {
         i.base(
           topPosition: 1,
           leftPosition: 1,
-          sizeH: 49,
+          sizeH: 47,
           sizeW: 1,
           color: isDark ? AppColors.joyFront : Colors.transparent,
           isBorderSize: false,
