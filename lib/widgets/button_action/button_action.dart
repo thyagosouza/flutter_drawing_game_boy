@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gameboy_drawing_flutter/core/dimensions.dart';
 import '../../core/app_colors.dart';
 
 import '../../model/game_boy_model.dart';
@@ -79,7 +80,7 @@ class ButtonAction extends StatelessWidget {
           t.baseText(
             topPosition: 50,
             leftPosition: 16,
-            fontSize: 14,
+            fontSize: Dimensions.font14,
             color: AppColors.fontBlue,
             fontFamily: 'NintendoLabo',
             text: text,

@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import '../../core/app_colors.dart';
+import '../../core/dimensions.dart';
 import '../../model/game_boy_model.dart';
 import '../../model/game_boy_text_model.dart';
 
@@ -101,7 +102,7 @@ class OnOffWidget extends StatelessWidget {
         t.baseText(
           topPosition: 8,
           leftPosition: 5,
-          fontSize: 8,
+          fontSize: Dimensions.font08,
           color: AppColors.w.withOpacity(0.8),
           //fontFamily: 'Nintendo05',
           text: 'ON • OFF',
@@ -109,7 +110,7 @@ class OnOffWidget extends StatelessWidget {
         t.baseText(
           topPosition: 8,
           leftPosition: 5.3,
-          fontSize: 8,
+          fontSize: Dimensions.font08,
           color: AppColors.background1.withOpacity(0.6),
           //fontFamily: 'Nintendo05',
           text: 'ON • OFF',

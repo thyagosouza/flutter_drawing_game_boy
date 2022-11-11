@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'core/app_colors.dart';
+import 'core/dimensions.dart';
 import 'model/game_boy_model.dart';
 import 'widgets/button_action/button_action.dart';
 import 'widgets/button_action/button_action_base.dart';
@@ -10,12 +11,19 @@ import 'widgets/select_button/select_button.dart';
 import 'widgets/select_button/select_button_base.dart';
 import 'widgets/sound_output.dart';
 
-class GameBoy extends StatelessWidget {
+class GameBoy extends StatefulWidget {
   const GameBoy({super.key});
 
   @override
+  State<GameBoy> createState() => _GameBoyState();
+}
+
+class _GameBoyState extends State<GameBoy> {
+  @override
   Widget build(BuildContext context) {
     final GameBoyModel i = GameBoyModel();
+    final Dimensions d = Dimensions();
+    //print("current height is" + MediaQuery.of(context).size.height.toString());
 
     return SafeArea(
       child: Scaffold(
@@ -262,7 +270,7 @@ class GameBoy extends StatelessWidget {
                     style: TextStyle(
                       color: AppColors.background2.withOpacity(0.5),
                       fontFamily: 'Nintendo04',
-                      fontSize: 8,
+                      fontSize: Dimensions.font08,
                     ),
                   )),
 
@@ -298,12 +306,12 @@ class GameBoy extends StatelessWidget {
                     style: TextStyle(
                       color: AppColors.cortes.withOpacity(0.5),
                       fontFamily: 'Nintendo09',
-                      fontSize: 6,
+                      fontSize: Dimensions.font06,
                     ),
                   )),
 
               // text Nintendo
-              const Positioned(
+              Positioned(
                   top: 360,
                   left: 45,
                   child: Text(
@@ -311,12 +319,12 @@ class GameBoy extends StatelessWidget {
                     style: TextStyle(
                       color: AppColors.fontBlue,
                       fontFamily: 'Nintendo10',
-                      fontSize: 13,
+                      fontSize: Dimensions.font13,
                       fontWeight: FontWeight.bold,
                     ),
                   )),
               // text GameBoy
-              const Positioned(
+              Positioned(
                   top: 357,
                   left: 124,
                   child: Text(
@@ -324,9 +332,9 @@ class GameBoy extends StatelessWidget {
                     style: TextStyle(
                       color: AppColors.fontBlue,
                       fontFamily: 'Nintendo07',
-                      fontSize: 16,
+                      fontSize: Dimensions.font16,
                       fontWeight: FontWeight.bold,
-                      letterSpacing: -3,
+                      letterSpacing: -Dimensions.space03,
                     ),
                   )),
               //joystick vertical
@@ -578,7 +586,7 @@ class GameBoy extends StatelessWidget {
                 child: Container(
                   width: 60,
                   height: 38,
-                  child: const PhoneInputWidget(),
+                  child: PhoneInputWidget(),
                 ),
               ),
             ],

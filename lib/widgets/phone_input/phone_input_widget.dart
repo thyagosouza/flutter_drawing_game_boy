@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import '../../core/app_colors.dart';
+import '../../core/dimensions.dart';
 import '../../model/game_boy_model.dart';
 import '../../model/game_boy_text_model.dart';
 
@@ -13,6 +14,7 @@ class PhoneInputWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final GameBoyModel i = GameBoyModel();
     final GameBoyTextModel t = GameBoyTextModel();
+
     return Container(
       //color: Colors.blue,
       width: 74,
@@ -93,14 +95,14 @@ class PhoneInputWidget extends StatelessWidget {
         t.baseText(
           topPosition: 8,
           leftPosition: 7,
-          fontSize: 9,
+          fontSize: Dimensions.font09,
           color: AppColors.w.withOpacity(0.8),
           text: 'PHONES',
         ),
         t.baseText(
           topPosition: 8,
           leftPosition: 7.3,
-          fontSize: 9,
+          fontSize: Dimensions.font09,
           color: AppColors.background1.withOpacity(0.6),
           text: 'PHONES',
         ),

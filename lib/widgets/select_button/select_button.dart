@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gameboy_drawing_flutter/core/dimensions.dart';
 import '../../core/app_colors.dart';
 
 import '../../model/game_boy_model.dart';
@@ -74,7 +75,7 @@ class SelectButton extends StatelessWidget {
           t.baseText(
             topPosition: 20,
             leftPosition: textPosition,
-            fontSize: 9,
+            fontSize: Dimensions.font09,
             color: AppColors.fontBlue,
             fontFamily: 'NintendoLabo',
             text: text,
