@@ -10,6 +10,7 @@ class GameBoyTextModel {
     double? leftPosition,
     double? rightPosition,
     double? topPosition,
+    double? letterSpacing,
   }) {
     return Positioned(
       top: topPosition,
@@ -22,6 +23,7 @@ class GameBoyTextModel {
           fontFamily: fontFamily,
           fontSize: fontSize,
           fontWeight: fontWeight,
+          letterSpacing: letterSpacing,
         ),
       ),
     );

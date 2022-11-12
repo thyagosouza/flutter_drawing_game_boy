@@ -75,7 +75,7 @@ class SelectButton extends StatelessWidget {
           t.baseText(
             topPosition: 20,
             leftPosition: textPosition,
-            fontSize: Dimensions.font09,
+            fontSize: 9,
             color: AppColors.fontBlue,
             fontFamily: 'NintendoLabo',
             text: text,
